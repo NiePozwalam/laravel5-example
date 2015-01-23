@@ -177,33 +177,33 @@ class BlogController extends Controller {
 	}
 
 	/**
-	 * Update "vu" for the specified resource in storage.
+	 * Update "seen" for the specified resource in storage.
 	 *
 	 * @param  Illuminate\Http\Request $request
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function updateVu(
+	public function updateSeen(
 		Request $request, 
 		$id)
 	{
-		$this->blog_gestion->updateVu($request->all(), $id);
+		$this->blog_gestion->updateSeen($request->all(), $id);
 
 		return response()->json(['statut' => 'ok']);
 	}
 
 	/**
-	 * Update "actif" for the specified resource in storage.
+	 * Update "active" for the specified resource in storage.
 	 *
 	 * @param  Illuminate\Http\Request $request
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function updateActif(
+	public function updateActive(
 		Request $request, 
 		$id)
 	{
-		$this->blog_gestion->updateActif($request->all(), $id);
+		$this->blog_gestion->updateActive($request->all(), $id);
 
 		return response()->json(['statut' => 'ok']);
 	}
