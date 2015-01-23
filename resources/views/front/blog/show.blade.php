@@ -11,12 +11,12 @@
 		<div class="box">
 			<div class="col-lg-12">
       	<hr>
-        <h2 class="text-center">{{ $post->titre }}
+        <h2 class="text-center">{{ $post->title }}
         	<br>
           <small>{{ $post->user->username }} {{ trans('front/blog.on') }} {!! $post->created_at . ($post->created_at != $post->updated_at ? trans('front/blog.updated') . $post->updated_at : '') !!}</small>
         </h2>
         <hr>
-        {!! $post->sommaire !!}<br>
+        {!! $post->sample !!}<br>
 				{!! $post->contenu !!}
 				<hr>
 				@if($post->tags->count())
