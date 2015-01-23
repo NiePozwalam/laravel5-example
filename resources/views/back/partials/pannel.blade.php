@@ -7,7 +7,7 @@
                 </div>
                 <div class="col-xs-9 text-right">
                     <div class="huge">{{ $nbr['new'] }}</div>
-                    <div>{{ $nom }}</div>
+                    <div>{{ $name }}</div>
                 </div>
             </div>
         </div>
